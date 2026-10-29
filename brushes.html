@@ -553,9 +553,19 @@
     
         .subcategory-page {
             min-height: 62vh;
-            padding: 54px 7% 70px;
+            padding: 0 0 70px;
             background: #fffaf6;
         }
+        .category-banner {
+            width: 100%;
+            height: clamp(220px, 30vw, 380px);
+            background-image: url("images/brushes-banner.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .subcategory-heading { display: none; }
+        .category-note { margin: 38px auto 0; width: min(780px, 90%); }
         .subcategory-heading {
             text-align: center;
             margin: 0 auto 34px;
@@ -665,6 +675,7 @@
         </div>
     </header>
         <main class="subcategory-page">
+            <div class="category-banner" role="img" aria-label="Brushes art supplies category banner"></div>
             <div class="subcategory-heading">
                 <h1>Brushes</h1>
                 <p>Find the right tools to bring your ideas to life.</p>
